@@ -1,0 +1,1707 @@
+/*add bg color*/
+:root{
+  background-color: #965d43;
+  overflow-x: hidden; /*prevents horizontal scrolling*/
+}
+
+.get-involved{
+    .logo img {
+        margin-top: 100px;
+    }
+}
+
+/*--------------------------------------------------------------------------------
+---------------------------------navigation bar---------------------------------
+--------------------------------------------------------------------------------*/
+
+.nav {
+    width: 100%; /*make the nav bar fill the entire width of the page*/
+    height: 100px; /*nav bar height*/
+    display: flex;
+    position: relative; /*keeps the nav fixed to the top of the page*/
+    background-color: #5b3023;
+    border-radius: 20px;/*rounds the corners*/
+    z-index: 2; /*keeps the index on top of the hero img*/
+}
+
+.nav a {
+    text-decoration: none; /*remove link underline*/
+}
+
+.nav li a {
+    color: #E0D1BB; /*nav link color*/
+    padding: 10px 20px; /*space around the nav links*/
+}
+
+.nav li a:hover {
+    color:#DFB66E;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}/*hover for the nav bar but dif from donate*/
+
+.nav-list {
+    display: flex;
+    margin-left: auto; /*moves the nav links to the right side of the nav bar*/
+
+
+    list-style-type: none; /*removes list bullet points*/
+
+    /*the typography for the nav links. provided by figma. modified by me :3.*/
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
+    align-items: center;
+    letter-spacing: 0.1rem;
+}
+
+.logo {
+    /*make it horizontal*/
+    display: flex;
+    /*center the logo and text*/
+    align-items: center;
+
+    margin-left: 25px; /*spacing between logo and the start of the nav bar*/
+
+    /*text logo typography style. provided by figma. modified by me ofc.*/
+    color: #E0D1BB;
+    font-family: "Dream to Berich DEMO (FOR USE P"; /*my font of choice*/
+    font-size: 1.5rem; /*logo font size*/
+    letter-spacing: 0.05rem; /*spacing between letters*/
+
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px; /*spacing between logo image and text*/
+    margin-top: 20px;
+}
+
+.logo h1 {
+    margin-top: 50px; /*align the text to the logo img*/
+    margin-left: 10px; /*spacing between logo and img*/
+    color: #E0D1BB;
+
+}
+
+/*the style for the donate button on the nav bar*/
+.donate {
+    display: flex;
+    width: 8rem;
+    height: 3rem; /*button size*/
+    justify-content: center;
+    align-items: center; /*centers the text in the button*/
+    border-radius: 1.1rem; /*rounds the corners of the button*/
+    background: #E0D1BB; /*button bg color*/
+    text-decoration: none; /*remove link underline*/
+
+    /*typography for the btn*/
+    color: #5B3023;
+    margin: 22px 25px 0 25px;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.donate:hover {
+    border-radius: 1.0625rem;
+    border: 2px solid #E0D1BB;
+    background: #5B3023;
+    color: #E0D1BB;
+    transition: 0.5s;
+} /*this makes it so when i hover is changes*/
+
+/*--------------------------------------------------------------------------------
+------------------------------------footer bar------------------------------------
+--------------------------------------------------------------------------------*/
+
+.footer {
+    position:absolute;
+    margin-top: 3rem;
+    width: 99.2%; /*yes .2% it looks good that way*/
+    height: 12rem;
+    border-radius: 2rem;
+    background: #5B3023;
+    padding-bottom: 0.8rem;
+}
+
+.footer img {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.footer a {
+    text-decoration: none;/*bye bye underline*/
+
+    /*typography*/
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+
+.footer p {
+    /*again typography*/
+    font: Montserrat;
+    color: #E0D1BB;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    margin-left: auto; /*moves the nav links to the right side of the nav bar*/
+    list-style-type: none; /*removes list bullet points*/
+    gap: 3rem;
+    margin-right: 5rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    color: #E0D1BB;
+    font-size: 1rem;
+}
+
+/*********************************************************************************
+----------------------------------------------------------------------------------
+------------------------------- INDEX PAGE ---------------------------------------
+----------------------------------------------------------------------------------
+*********************************************************************************/
+
+/*--------------------------------Hero Section------------------------------*/
+.hero{
+    background-image: url("images/index/hero.jpg"); /*the hero img*/
+    background-size: cover;
+    background-repeat: no-repeat; /*makes the img cover the entire hero section*/;
+    max-width: 100%;
+    height: 65rem;
+    padding: 0;
+    margin-top: -35px;
+}
+/*this adds the hero img bg and sizes it to the full width of the page*/
+
+/*top gradient box*/
+.box .rectangle {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 2500px;
+  height: 135px;
+  background: linear-gradient(
+    180deg,
+    rgba(150, 93, 67, 0) 0%,
+    rgba(150, 93, 67, 0.5) 42%,
+    rgba(150, 93, 67, 0.75) 63%,
+    rgb(150, 93, 67) 100%
+  ); /*the gradient for the box*/
+  rotate: 180deg; /*rotate it upside down to have the gradient in the right direction*/
+  margin-top: -30px; /*move the rectangle up*/
+  z-index: 1;   /*keeps the gradient on top of the img*/
+}
+
+/*bottom gradient*/
+.box-a .rectangle-a {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 2500px;
+  height: 135px; /*size of the gradient box*/
+  background: linear-gradient(
+    180deg,
+    rgba(150, 93, 67, 0) 0%,
+    rgba(150, 93, 67, 0.5) 42%,
+    rgba(150, 93, 67, 0.75) 63%,
+    rgb(150, 93, 67) 100%
+  ); /*the gradient for the box*/
+  margin-top: 858px; /*move the rectangle down*/
+  z-index: 1; /*keeps the gradient on top of the img*/
+}
+/*the boxes are for the gradient transition from bg to img.*/
+
+.text-btn {
+    position: absolute;
+    top: 71%; /*move it down*/
+    left: 5%; 
+    text-align: left; /*align the text to the left*/
+    z-index: 2; /*keeps the text on top of the img and gradients*/
+}
+
+.text-btn h1 {
+    /*h1 typography. provided by figma. modified by me again*/
+    color: #EEECDE;
+    text-shadow: 9px 3px 5.9px #000; /*adds the shadow behind the text*/
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 3rem; /*the font size ofc*/
+    line-height: 3.125rem; /*spacing between the h1 and p*/
+    letter-spacing: 0.04rem;
+}
+
+.text-btn p {
+    /*p typography. provided by figma. modified by me again*/
+    color: #EEECDE;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(50, 34, 15); 
+    /*this adds the stock to the p text*/
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    margin-top: -20px;
+    line-height: 2rem;
+}
+
+.adopt {
+    display: flex;
+    width: 9rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: left;
+    border-radius: 1.1rem; /*rounds the corners of the button*/
+    background: #E0D1BB; /*bg color for the adopt btn*/
+    text-decoration: none; /*removes underline*/
+
+    /*typography for the btn*/
+    color: #5B3023;
+    margin: 22px 25px 0 25px;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.2rem;
+    padding-top: 10px;
+    }
+
+.adopt:hover {
+    border-radius: 1rem;
+    border: none;
+    background: #5B3023;
+    color: #E0D1BB;
+    transition: 0.3s;/*fades in*/
+} /*this makes it so when i hover is changes*/
+
+/*position the btn*/
+.a-btn {
+    margin-top: -1rem;
+    margin-left: -1.5rem;
+}
+
+/*----------------------------CTA/Get Involved Section--------------------------*/
+
+.cta {
+    border-radius: 4rem;
+    background: #5B3023;
+    margin-top: 3rem;
+    margin-left: 1.8rem;
+    width: 110rem;
+    height: 35rem;/*size*/
+    justify-content: center;
+    align-items: center; /*align center*/
+}
+
+.cta-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.card {
+    width: 28rem;
+    height: 17rem;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    background: #AF6B3E;
+    display: absolute;
+    align-items: center;
+}
+
+.card img {
+    /*svg img size*/
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-left: 40%;
+}
+
+.card h3 {
+    /*typography for the h3*/
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.card p {
+    /*typography for the p*/
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    text-transform: lowercase;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.cta-text h2 {
+    /*typography for the h2*/
+    color: #EEECDE;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2.3rem;
+    line-height: 1.5rem; 
+}
+
+.cta-text p {
+    /*typography for the p*/
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.cta-text {
+    padding: 2.5rem 10rem 0 10rem;
+}
+
+/*----------------------------About Us Section--------------------------*/
+
+.about-us {
+    background-image: url('images/index/about-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+}
+/*about us bg*/
+
+.about-us h2 {
+    /*typography for the h2*/
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2rem;
+    line-height: normal;
+    padding-top: 4rem;
+}
+
+.about-us p {
+    /*typography for the p*/
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    padding: 0 20rem;
+}
+
+.about-us a{
+    /*sizing and tyling of the learn more btn*/
+    display: flex;
+    width: 15rem;
+    height: 4rem;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center; /*aligns to the center*/
+    gap: 0.5rem;
+
+    border-radius: 1.2rem;
+    background: #E0D1BB;
+
+    /*typography for the btn*/
+    color: #5B3023;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    margin-left: 49.5rem;
+    text-decoration: none;
+}
+
+.about-us a:hover{
+    background-color: #5B3023;
+    color:#E0D1BB;
+    transition: 0.5s;
+}
+
+/*----------------------------Free Resources Section--------------------------*/
+.resources-text {
+    padding: 0 20rem;
+    text-align: center;
+}
+
+/*title with typography*/
+.resources h2 {
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2.5rem;
+}
+
+/*p with typography*/
+.resources p {
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    margin-top: -2rem;
+    margin-bottom: 2.5rem;
+}
+
+/***************THE RESOURCE CARDS***************/
+.re-card h4 {
+    /*typography for the h4*/
+    color: #DFB66E;
+    font-family: Montserrat;
+    font-size: 1.5rem; 
+    margin-top: 0;
+
+}
+
+.re-card p {
+    /*typography for the p*/
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1rem;
+    margin-top: 0;
+    line-height: 1.5rem;
+}
+
+.re-card img {
+    width: 20rem;
+    height: 14.5rem;
+    border-radius: 1.5rem;
+    object-fit: cover; /*prevent img stretching*/
+}
+
+.title-c {
+    height: 5rem;
+}
+
+.title-c p {
+    margin-top: -2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding:0 11rem 0 0;
+    align-items: left;
+}
+
+.resource-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-left: 15rem;
+}
+
+.re-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.re-card .re-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-btn {
+    transform: translateY(-2rem);
+}
+
+.small-btn a {
+    display: inline-flex; /*flex in to one line*/
+    height: 1.8rem;
+    width: 3.5rem; /*btn size*/
+    justify-content: center;
+    align-items: center; /*center text*/
+    margin-right: 0.5rem; /*gap between the btn*/
+    border-radius: 1rem; /*round corners*/
+    background: #E0D1BB; /*btn bg color*/
+
+
+    /*typography for the btn*/
+    color: #5B3023;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+
+
+/*********************************************************************************
+----------------------------------------------------------------------------------
+------------------------------- GET INVOLVED PAGE ---------------------------------------
+----------------------------------------------------------------------------------
+*********************************************************************************/
+
+/*--------------------------------Hero Section---------------------------------*/
+
+.hero-get{
+    background-image: url('images/get-involved/hero-1.jpg'); /*the hero img*/
+    background-size: cover;
+    background-repeat: no-repeat; /*makes the img cover the entire hero section*/;
+    max-width: 100%;
+    height: 65rem;
+    margin-top: -5rem;
+}
+/*this adds the hero img bg and sizes it to the full width of the page*/
+
+/*bottom gradient*/
+.box-b .rectangle-b {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 2500px;
+  height: 200px; /*size of the gradient box*/
+  background: linear-gradient(
+    180deg,
+    rgba(91, 48, 35, 0) 0%,
+    rgba(91, 48, 35, 0.5) 42%,
+    rgba(91, 48, 35, 0.75) 63%,
+    rgb(91, 48, 35) 100%
+  ); /*the gradient for the box*/
+  margin-top: 48rem; /*move the rectangle down*/
+  z-index: 1; /*keeps the gradient on top of the img*/
+}
+
+.top-text h1{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.top-text p {
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}
+
+.top-text {
+    align-items: center;
+    position: relative;
+    top: 121px;
+    margin-left: 0rem;
+    font-family: "Dream to Berich DEMO (FOR USE P-Regular";
+    color: #e0d1bb;
+    font-size: 24px;
+    text-align: center;
+    z-index: 2; /*on top of the other stuff*/
+}
+
+.bott-text h1{
+    /*typogrpahy*/
+    color: #E0D1BB;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /*spacing between text*/
+    text-shadow: 9px 3px 5.9px #000000b8; /*shadow behind text*/
+}
+
+.bott-text p{
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    margin-top: -2.5rem;
+}
+
+.bott-text{
+    position: relative;
+    top: 45rem;
+    left: 3rem;
+    color: #e0d1bb;
+    font-size: 32px;
+    letter-spacing: 0.32px;
+    z-index: 2;
+    padding-right: 15rem;
+}
+
+/*----------------------------CTA-Volunteer Section--------------------------*/
+
+.cta-v {
+    display: flex;
+    margin-left: -0.5rem;
+    width: 120rem;
+    height: 17rem;
+    padding: 4rem 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 2.1875rem 2.1875rem;
+    background: #5B3023;
+}
+
+.cta-text-v h1 {
+    width: 50.75rem;
+    height: 4.625rem;
+    color: #E0D1BB;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2rem;
+}
+
+.cta-text-v p {
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.cta-text-v {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    align-items: left;
+    margin-left: -15rem;
+}
+
+.cta-btn {
+    display: flex;
+    width: 13rem;
+    height: 5rem;
+    padding: 0.5rem 2.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(224, 209, 187, 0.50) 0%, rgba(224, 209, 187, 0.94) 100%); 
+    /*middle opacity reduces*/
+    margin-left: 25rem;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2rem;
+    color: #5B3023;
+}
+
+.cta-v a{
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(91, 48, 35, 0.50) 0%, rgba(91, 48, 35, 0.94) 100%); /*change to brown on hover*/
+    border: 2px solid #E0D1BB;
+    color:#E0D1BB;
+}
+
+
+/*----------------------------Position Section--------------------------*/
+.position {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    border-radius: 4rem;
+    background: rgba(91, 48, 35, 0.57);
+}
+
+.p-text {
+    text-align: center;
+    margin-top: -3rem;
+}
+
+.p-text h2{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2.5rem;
+    line-height: 150%;
+}
+
+.p-text p{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    padding: 0 15rem;
+}
+
+.position-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.card-p {
+    border-radius: 2.5rem;
+    background: #AF6B3E;
+    width: 28rem;
+    height: 20rem;
+    text-align: center;
+}
+
+.card-p h4{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    padding: 0 2rem;
+    line-height: 1.5rem;
+}
+
+.card-p p{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1rem;
+    padding: 0 3rem 0.5rem;
+    margin-top: -0.5rem;
+}
+
+.card-p a{
+    padding: 0.5rem 4rem 0.1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: #E0D1BB;
+
+    /*typography for the btn*/
+    color: #5B3023;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.card-p a:hover{
+    background: #5B3023;
+    color: #E0D1BB;
+    transition: 0.5s;
+}/*more hover animation. all are pretty much the same so yeah copy past my code*/
+
+/*-------------------------------Donations-----------------------------*/
+.donation {
+background: rgba(91, 48, 35, 0.33);
+width: 100%;
+margin-top: 4rem;
+height: 45rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 4rem;
+}
+
+.d-text h2 {
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 3rem;
+    font-style: normal;
+    margin-top: 5rem;
+}
+
+.d-text p {
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    margin-top: -3rem;
+    padding: 0 10rem;
+}
+
+.donation-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0 25rem;
+    margin-top: 4rem;
+}
+
+.card-d {
+    width: 30rem;
+    height: 21rem;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2em;
+    background: #965D43;
+
+}
+
+.price {
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Huglove;
+    font-size: 2.5rem;
+    margin-top: -3rem;
+}
+
+.price-t h3 {
+    justify-content: center;
+    color: #E0D1BB;
+    text-align: center;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: -3rem;
+}
+
+.price-t p{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    margin-top: -1rem;
+}
+
+.price-t ul {
+    color: #DBCAB3;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.donation-cards a{
+    display: flex;
+    width: 28rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    background: #E0D1BB;
+    padding-top: 0.5rem;
+
+    /*typography for btn*/
+    color: #5B3023;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.donation-cards a:hover{
+    background: #5B3023;
+    color: #E0D1BB;
+    transition: 0.5s;
+}
+
+.btn-two {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 40%;
+}
+
+.btn-two a{
+    width: 9rem;
+    height: 2rem;
+    padding: 0.5rem 0 0.2rem 0; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    background: #E0D1BB;
+    margin-right: 1rem;
+
+    /*typography for the btn*/
+    color: #5B3023;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 0.8rem;
+}
+
+
+/*********************************************************************************
+----------------------------------------------------------------------------------
+------------------------------- ABOUT PAGE ---------------------------------------
+----------------------------------------------------------------------------------
+*********************************************************************************/
+
+/*-------------------------------Hero-----------------------------*/
+.hero-a {
+    background-image: url('images/about/shelter-dog.jpg'); /*the hero img*/
+    background-size: cover;
+    background-repeat: no-repeat; /*makes the img cover the entire hero section*/;
+    max-width: 100%;
+    height: 65rem;
+    padding: 0;
+    margin-top: -5.4rem;
+}
+
+.hero-a-text {
+    position: absolute;
+    top: 75%; /*move it down*/
+    left: 5%; 
+    text-align: left; /*align the text to the left*/
+    z-index: 2;
+}
+
+.hero-a-text h1 {
+color: #EBDEC9;
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.72);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgba(150, 93, 67, 0.39);
+font-family: "Dream to Berich DEMO (FOR USE P";
+font-size: 3.5rem;
+}
+
+.hero-a-text p {
+color: #EBDEC9;
+font-family: Montserrat;
+font-size: 3rem;
+margin-top: -5rem;
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.72);
+}
+
+/*bottom gradient*/
+.box-c .rectangle-c {
+  position: absolute;
+  top: 4.3rem;
+  left: 0;
+  width: 100%;
+  height: 135px; /*size of the gradient box*/
+  background: linear-gradient(
+    180deg,
+    rgba(150, 93, 67, 0) 0%,
+    rgba(150, 93, 67, 0.5) 42%,
+    rgba(150, 93, 67, 0.75) 63%,
+    rgb(150, 93, 67) 100%
+  ); /*the gradient for the box*/
+  margin-top: 858px; /*move the rectangle down*/
+  z-index: 1; /*keeps the gradient on top of the img*/
+}
+
+/*-------------------------------Our Mission-----------------------------*/
+.box-d .rectangle-d {
+  position: absolute;
+  top: 16rem;
+  left: 0;
+  width: 100%;
+  height: 200px; /*size of the gradient box*/
+  background: linear-gradient(
+    180deg,
+    rgba(91, 48, 35, 0) 0%,
+    rgba(91, 48, 35, 0.5) 42%,
+    rgba(91, 48, 35, 0.75) 63%,
+    rgb(91, 48, 35) 100%
+  ); /*the gradient for the box*/
+  margin-top: 48rem; /*move the rectangle down*/
+  z-index: 1; /*keeps the gradient on top of the img*/
+}
+
+.miss-val {
+    width: 100%;
+    height: 75rem;
+    background: #5B3023;
+    margin-top: 10rem;
+    text-align: left;
+}
+
+.mission {
+    background-image: url(images/about/gradient-paw-prints-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /*same as her cover the full screen, no repeat of img and full width*/
+    height: auto; /*adjust easily for responsiveness*/
+
+}
+
+.mission-t h2 {
+    color: #FFF;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 3rem;
+}
+
+.mission-t p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+
+    margin-top: -2.5rem;
+}
+
+.mission-t {
+    padding: 4rem 15rem 6rem;
+}
+
+
+/*---------------------------Values-----------------------------*/
+.values {
+    padding: 2rem 15rem 5rem;
+}
+
+.values h2 {
+    color: #E0D1BB;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 3rem;
+}
+
+.values-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem 5rem;
+    margin-top: -2rem;
+}
+
+.card-v {
+    width: 35rem;
+    height: 10rem;
+    border-radius: 1.5rem;
+    background: rgba(175, 107, 62, 0.58);
+    padding: 0 3rem;
+}
+
+.card-v h3 {
+    color: #E0D1BB;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.card-v p {
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1.1rem;
+
+    margin-top: -1.5rem;
+}
+
+/*-------------------------------Our Story-----------------------------*/
+
+.story {
+    width: 100%;
+    height: 40rem;
+    background: rgba(91, 48, 35, 0.34);
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.story-img {
+    margin-left: 15rem;
+    margin-right: 8rem;
+}
+
+.story-img img{
+    width: 30em; 
+    border-radius: 30rem;
+    border: solid rgb(91, 48, 35, 0.5) 2rem;
+
+}
+
+.story-content {
+    display: flex;
+    width: 50rem;
+    height: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -2rem ;
+}
+
+.story-content h2 {
+    color: #E0D1BB;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 2.5rem;
+}
+
+.story-content p {
+    color: #E0D1BB; 
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    margin-top: -1.25rem;
+}
+
+/*-------------------------------Contact Section-----------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+/************************form**********************/
+.contact-form {
+    width: 60rem;
+    height: 45rem;
+    padding: 2rem 0 1rem 5rem;
+    margin-left: 5rem;
+    margin-top: 4em;
+    border-radius: 1rem;
+    background: rgba(91, 48, 35, 0.49); 
+    align-content: center; 
+}
+
+.small-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.small-box label{
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input{
+    width: 30em;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: rgba(224, 209, 187, 0.47);
+    border: none;
+}
+
+.msg-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.msg-box label {
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.msg-box textarea {
+    width: 53.5rem;
+    height: 15rem;
+    border-radius: 0.875rem;
+    background: rgba(224, 209, 187, 0.47);
+    border: none;
+}
+
+.btn-form button {
+    display: flex;
+    width: 7rem;
+    height: 3.5rem;
+    padding: 0.4rem 0 0 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: rgba(224, 209, 187, 0.91);
+    margin-top: 1.5rem;
+    border: none;
+
+    color: #5B3023;
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1em;
+}
+
+/****************contact info**********************/
+.contact-info {
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.contact-info img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact-info h6{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+
+    margin-bottom: -0.5rem;
+}
+
+.contact-info p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    margin-bottom: -2.5rem;
+}
+
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: -2.5rem;
+}
+
+
+/*------------------------------------about footer bar------------------------------------
+--------------------------------------------------------------------------------
+--footer wasn't properly responding on the about page like all the others so I copied same code just dif class names and moved the nav bar down.*/
+
+.footer-about {
+    position:absolute;
+    margin-top: 96rem;
+    width: 99.2%;
+    height: 12rem;
+    border-radius: 2rem;
+    background: #5B3023;
+    padding-bottom: 0.8rem;
+}
+
+.footer-about img {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.footer-about a {
+    text-decoration: none;
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+
+.footer-about p {
+    font: Montserrat;
+    color: #E0D1BB;
+}
+
+.footer-about ul{
+    list-style: none;
+    display: flex;
+    margin-left: auto; /*moves the nav links to the right side of the nav bar*/
+    list-style-type: none; /*removes list bullet points*/
+    gap: 3rem;
+    margin-right: 5rem;
+}
+
+.footer-about-nav {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    color: #E0D1BB;
+    font-size: 1rem;
+}
+
+
+/*********************************************************************************
+----------------------------------------------------------------------------------
+------------------------------- 404 PAGE ---------------------------------------
+----------------------------------------------------------------------------------
+*********************************************************************************/
+
+.four img{
+    width: 20rem;
+    height: 25rem;
+    aspect-ratio: 53/64;
+    align-items: center;
+    margin: 4rem 50rem;
+}
+
+.four h1{
+    color: #EBDEC9;
+    text-shadow: 6px -1px 6.4px #5B3023;
+    font-family: Lostar;
+    font-size: 10rem;
+    margin-left: 50rem;
+    margin-top: -9.5rem;
+}
+
+.four p{
+    color: #E0D1BB;
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin-left: 51rem;
+    margin-top: -9rem
+}
+
+.four button {
+    border-radius: 6rem;
+    background: #E0D1BB;
+    width: 10rem;
+    height: 4rem;
+    margin-left: 54rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    border: none;
+
+    color: rgba(91, 48, 35, 0.90);
+    font-family: "Dream to Berich DEMO (FOR USE P";
+    font-size: 1rem;
+}
+
+
+/*********************************************************************************
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+------------------------------- MEDIA QUERIES ---------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+*********************************************************************************/
+/*my kryptonite TvT i don't like mobile its so tinyyyy*/
+
+.mobile a {
+    display: flex;
+    flex-direction: row;
+    /*logo nav is in a row till smaller screen since it goes to colunm later at 390px*/
+}
+
+.mobile-bg {
+    background-color: #5B3023;/*ofc bg colour*/
+}
+
+.list-m{
+    list-style-type: none; /*remove list dots*/
+
+    background-color: #E0D1BB; /*bg color like always*/
+
+    height: 5rem;
+    width: 15em;/*size ofc*/
+
+    margin-bottom: 2rem;/*adds gap under*/
+
+    align-content: center;
+    justify-content: center;/*center the stuff*/
+
+    border-radius: 2rem; /*roundnes of btn*/
+    color: #5B3023;/*text color for btn*/
+    margin-left: 0rem;
+    
+    /*never ending typograpy*/
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    text-align: center;/*center text*/
+
+}
+
+.nav-mobile a {
+    text-decoration: none;
+}
+
+.mobile-body {
+    float: right;/*moves/floats to the right i forgot float existed pfft*/
+    margin-right: 2rem; /*gap between end end btn*/
+}
+
+/*hero image get adjusted for every few sizes*/
+
+@media screen and (max-width:1280px) {
+
+    .logo img {
+    height: 60px;
+    }/*adjust logo size*/
+
+    .logo h1 {
+        font-size: 2.5rem;
+        margin-top: 2.6rem;
+    }/*logo text size now*/
+
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-1280x.jpg"); /*the hero img*/
+    }
+
+    .cta-cards {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .cta {
+        width: 90%;
+        height: 75rem;
+        gap: 1rem;
+    }
+
+    .card {
+        margin-top: 7rem;
+        margin-bottom: -50rem;
+    }
+
+    .about-us {
+        width: 98%;
+        height: auto;
+        padding-bottom: 2rem;   
+    }
+
+    .about-us a {
+        margin-left: 23.5em;
+    }
+
+    .resource-cards {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width:1026px){
+    .hamburg {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .nav-list {
+        display: none;
+    } /*hids nav*/
+
+    .nav-donate {
+        display: none;
+    } /*do i need to say it... yes? ok. it hides again lol*/
+
+    .cta-v {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    height: 30rem;
+    padding: 0 0 0 5rem;
+    }
+
+    .cta-text-v {
+        margin-top: -2.2rem;
+    margin-left: -10rem;
+    }
+
+    .cta-v a {
+        margin-left: -66rem;
+    }
+
+    .position {
+        height: 100rem;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+    .position-cards {
+        margin-top: -2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-text {
+        margin-top: -2rem;
+        padding: 0 0 0 0;
+    }
+
+    .p-text p{
+    color: #E0D1BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    padding: 0 5rem;
+}
+}
+
+.hamburg img {
+    position: relative;
+    height: 4rem;
+    margin-left: 25rem;
+    margin-top: 1.2rem;
+}
+
+
+
+@media screen and (max-width:810px) {
+
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-810x.jpg"); /*the hero img*/
+        height: 50rem;
+    }
+
+    .box-a .rectangle-a {
+      margin-top: 39em;
+    }
+
+    .text-btn {
+    position: absolute;
+    top: 55%;
+    }
+
+    .text-btn h1 {
+    font-size: 2.5rem;
+    } 
+
+    .text-btn p {
+        font-size: 2rem;
+    }
+
+    .adopt {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    }
+
+    .hamburg img {
+    margin-left: 19rem;
+}
+
+    .cta {
+        width: 90%;
+        height: 85rem;
+        gap: 1rem;
+    }
+
+    .cta-text h2 {
+    line-height: 3rem; 
+}
+
+    .about-us p{
+        padding:0 5rem;
+    }
+
+    .about-us a{
+        margin-left: 15rem;
+    }
+
+    .resources-text{
+        padding: 0 5rem;
+    }
+
+    .resource-cards{
+        margin-left: 5rem;
+    }
+
+    .content {
+        padding: 0 5rem 0 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-768x.jpg"); /*the hero img*/
+
+           
+    }
+    .hamburg img {
+    margin-left: 13rem;
+}
+}
+
+@media screen and (max-width:580px){
+    .hamburg img {
+    margin-left: 10rem;
+    }
+        .logo h1{
+        display: none;
+    }
+
+    .cta {
+        width: 90%;
+        height: 85em;
+        gap: 1rem;
+    }
+
+    .cta-text {
+    padding: 2.5rem 5rem 0;
+    }
+
+     .about-us a{
+        margin-left: 9rem;
+    }
+
+    .re-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; 
+    }
+
+    .resource-cards{
+        margin-left: 2rem;
+    }
+
+    .content {
+    margin-left: 2rem;
+    align-items: center;   
+    padding: 0 3rem 
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+    /*get involved*/
+    .top-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .bott-text h1 {
+        font-size: 2.5rem;
+        margin-top: -8em;
+    }
+
+    .bott-text p {
+        font-size: 2rem;
+    }
+
+    .position{
+        height: 140em;
+    }
+    .card-p {
+        height: 25em;
+        width: 18em;
+        padding-bottom: 3rem;
+    }
+
+    .card-p a{
+        padding: 0.5rem 2rem 0.1rem;
+
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-390x.jpg"); /*the hero img*/
+        height: 30rem;
+    }
+
+    .box-a .rectangle-a {
+        margin-top: 19rem; 
+    }
+
+    .text-btn {
+        top: 25%;
+    }
+
+    .text-btn h1{
+        font-size: 1.5rem;
+    }
+
+    .text-btn p{
+        font-size: 1rem;
+    }
+
+    .adopt {
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        margin-top: -1rem;
+        margin-left: -1rem;
+    }
+
+    .list-m {
+        width: 20rem;
+    }
+    .hamburg img {
+    margin-left: 0rem;
+    }
+
+    .card-p {
+        width: 18em;
+        padding-bottom: 10rem;
+    }
+
+    .card-p a {
+        width: 2rem;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-360x.jpg"); /*the hero img*/
+        height
+    }
+
+    .list-m {
+        width: 18rem;
+    }
+}
+
+/*comments geet long when you get to this many lines omg and im not even done but i have to be done but this was fun and will have to finsih later for my porfolio*/
+/*THANK YOU ADAM FOR BEING A GREAT TEACHER*/

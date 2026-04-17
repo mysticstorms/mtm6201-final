@@ -1,0 +1,292 @@
+.mobile a {
+    display: flex;
+    flex-direction: row;
+    /*logo nav is in a row till smaller screen since it goes to colunm later at 390px*/
+}
+
+.mobile-bg {
+    background-color: #5B3023;/*ofc bg colour*/
+}
+
+.list-m{
+    list-style-type: none; /*remove list dots*/
+
+    background-color: #E0D1BB; /*bg color like always*/
+
+    height: 5rem;
+    width: 15em;/*size ofc*/
+
+    margin-bottom: 2rem;/*adds gap under*/
+
+    align-content: center;
+    justify-content: center;/*center the stuff*/
+
+    border-radius: 2rem; /*roundnes of btn*/
+    color: #5B3023;/*text color for btn*/
+    margin-left: 0rem;
+    
+    /*never ending typograpy*/
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    text-align: center;/*center text*/
+
+}
+
+.nav-mobile a {
+    text-decoration: none;
+}
+
+.mobile-body {
+    float: right;/*moves/floats to the right i forgot float existed pfft*/
+    margin-right: 2rem; /*gap between end end btn*/
+}
+
+/*hero image get adjusted for every few sizes*/
+
+@media screen and (max-width:1280px) {
+
+    .logo img {
+    height: 60px;
+    }/*adjust logo size*/
+
+    .logo h1 {
+        font-size: 2.5rem;
+        margin-top: 2.6rem;
+    }/*logo text size now*/
+
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-1280x.jpg"); /*the hero img*/
+    }
+
+    .cta-cards {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .cta {
+        width: 90%;
+        height: 75rem;
+        gap: 1rem;
+    }
+
+    .card {
+        margin-top: 7rem;
+        margin-bottom: -50rem;
+    }
+
+    .about-us {
+        width: 98%;
+        height: auto;
+        padding-bottom: 2rem;   
+    }
+
+    .about-us a {
+        margin-left: 23.5em;
+    }
+
+    .resource-cards {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width:1026px){
+    .hamburg {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .nav-list {
+        display: none;
+    } /*hids nav*/
+
+    .nav-donate {
+        display: none;
+    } /*do i need to say it... yes? ok. it hides again lol*/
+}
+
+.hamburg img {
+    position: relative;
+    height: 4rem;
+    margin-left: 25rem;
+    margin-top: 1.2rem;
+}
+
+
+@media screen and (max-width:810px) {
+
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-810x.jpg"); /*the hero img*/
+        height: 50rem;
+    }
+
+    .box-a .rectangle-a {
+      margin-top: 39em;
+    }
+
+    .text-btn {
+    position: absolute;
+    top: 55%;
+    }
+
+    .text-btn h1 {
+    font-size: 2.5rem;
+    } 
+
+    .text-btn p {
+        font-size: 2rem;
+    }
+
+    .adopt {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    }
+
+    .hamburg img {
+    margin-left: 19rem;
+}
+
+    .cta {
+        width: 90%;
+        height: 85rem;
+        gap: 1rem;
+    }
+
+    .cta-text h2 {
+    line-height: 3rem; 
+}
+
+    .about-us p{
+        padding:0 5rem;
+    }
+
+    .about-us a{
+        margin-left: 15rem;
+    }
+
+    .resources-text{
+        padding: 0 5rem;
+    }
+
+    .resource-cards{
+        margin-left: 5rem;
+    }
+
+    .content {
+        padding: 0 5rem 0 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-768x.jpg"); /*the hero img*/
+
+           
+    }
+    .hamburg img {
+    margin-left: 13rem;
+}
+}
+
+@media screen and (max-width:580px){
+    .hamburg img {
+    margin-left: 10rem;
+    }
+        .logo h1{
+        display: none;
+    }
+
+    .cta {
+        width: 90%;
+        height: 85em;
+        gap: 1rem;
+    }
+
+    .cta-text {
+    padding: 2.5rem 5rem 0;
+    }
+
+     .about-us a{
+        margin-left: 9rem;
+    }
+
+    .re-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; 
+    }
+
+    .resource-cards{
+        margin-left: 2rem;
+    }
+
+    .content {
+    margin-left: 2rem;
+    align-items: center;   
+    padding: 0 3rem 
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-390x.jpg"); /*the hero img*/
+        height: 30rem;
+    }
+
+    .box-a .rectangle-a {
+        margin-top: 19rem; 
+    }
+
+    .text-btn {
+        top: 25%;
+    }
+
+    .text-btn h1{
+        font-size: 1.5rem;
+    }
+
+    .text-btn p{
+        font-size: 1rem;
+    }
+
+    .adopt {
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        margin-top: -1rem;
+        margin-left: -1rem;
+    }
+
+    .list-m {
+        width: 20rem;
+    }
+    .hamburg img {
+    margin-left: 0rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:360px) {
+    .hero{
+        background-image: url("images/index/hero.jpg-derivatives/hero-360x.jpg"); /*the hero img*/
+        height
+    }
+
+    .list-m {
+        width: 18rem;
+    }
+}
