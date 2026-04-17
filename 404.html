@@ -11,29 +11,29 @@
 <body>
     <header>
         <!--nav bar with logo and navigation links-->
-        <nav class="nav">
+        <nav class="nav" role="navigation">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/resized-logo.png" alt="Pawster Logo">
+                <a href="index.html" role="button">
+                    <img src="images/resized-logo.png" alt="Pawster Logo" role="img">
                 </a>
-                <a href="index.html">
+                <a href="index.html" role="button">
                     <h1>Pawster</h1>
                 </a>
             </div>
             <!--this will be the logo with the brands name-->
 
-            <ul class="nav-list">
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="404.html">Adopt</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="404.html">Resources</a></li>
+            <ul class="nav-list" role="list" role="button">
+                <li><a href="get-involved.html" role="button">Get Involved</a></li>
+                <li><a href="404.html" role="button">Adopt</a></li>
+                <li><a href="about.html" role="button">About</a></li>
+                <li><a href="404.html" role="button">Resources</a></li>
             </ul>
             <!--list for nav pages-->
-            <div class="nav-donate">
+            <div class="nav-donate" role="button">
                 <a href="get-involved.html" class="donate">DONATE</a>
             </div>
             <!--the donate button-->
-            <div class="hamburg">
+            <div class="hamburg" role="button">
                 <a href="mobile-nav.html">
                     <img src="images/menu.svg">
                 </a><!--hamburger menu-->
@@ -46,10 +46,10 @@
 
     <main class="four">
         <div class="Message">
-            <img src="images/404/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.png" alt="a dog with a paw out">
-            <h1>404</h1>
-            <p>Page Not Found</p>
-            <button class="back" onclick="history.back()">go back</button> 
+            <img src="images/404/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.png" alt="a dog with a paw out" role="img">
+            <h1 role="heading">404</h1>
+            <p role="text">Page Not Found</p>
+            <button class="back" onclick="history.back()" role="button">go back</button> 
             <!--the js will make it so that the btn navigates back to previous page-->
         </div>
     </main>
@@ -59,16 +59,16 @@
 
     <!--FOOTER-->
     <footer>
-        <div class="footer">
-            <img src="images/resized-logo.png" alt="Pawster Logo">
+        <div class="footer" role="menubar">
+            <img src="images/resized-logo.png" alt="Pawster Logo" role="img">
             <div class="footer-nav">
                 <p>&copy; 2026 Pawster. All rights reserved.</p>
 
-                <ul>
-                    <li><a href="404.html">Privacy Policy</a></li>
-                    <li><a href="404.html">Terms of Service</a></li>
-                    <li><a href="404.html">Cookie Policy</a></li>
-                    <li><a href="about.html">Contact Us</a></li>
+                <ul role="list">
+                    <li><a href="404.html" role="button">Privacy Policy</a></li>
+                    <li><a href="404.html" role="button">Terms of Service</a></li>
+                    <li><a href="404.html" role="button">Cookie Policy</a></li>
+                    <li><a href="about.html" role="button">Contact Us</a></li>
                 </ul>
             </div>
         </div>

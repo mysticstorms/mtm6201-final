@@ -9,32 +9,34 @@
 </head>
 <body>
     <header>
+        <a href="#main" class="skip">Skip to main content</a><!--accessibily almost forgot-->
+
         <!--------------------------Navigation Bar--------------------------->
         <!--nav bar with logo and navigation links-->
-        <nav class="nav">
-            <div class="logo">
+        <nav class="nav" role="navigation">
+            <div class="logo" role="button">
                 <a href="index.html">
-                    <img src="images/resized-logo.png" alt="Pawster Logo">
+                    <img src="images/resized-logo.png" alt="Pawster Logo" role="img">
                 </a>
-                <a href="index.html">
+                <a href="index.html" role="button">
                     <h1>Pawster</h1>
                 </a>
             </div>
             <!--this will be the logo with the brands name-->
 
-            <ul class="nav-list">
+            <ul class="nav-list" role="list">
                 <li><a href="get-involved.html">Get Involved</a></li>
                 <li><a href="404.html">Adopt</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="404.html">Resources</a></li>
             </ul>
             <!--list for nav pages-->
-            <div class="nav-donate">
+            <div class="nav-donate" role="button">
                 <a href="get-involved.html" class="donate">DONATE</a>
             </div>          
             <!--the donate button-->
         
-            <div class="hamburg">
+            <div class="hamburg" role="button">
                 <a href="mobile-nav.html">
                     <img src="images/menu.svg">
                 </a>
@@ -43,10 +45,10 @@
     </header>
 
 <!--MAIN-->
-    <main class="about">
+    <main class="about" role="main">
 
         <!----------------------------------Hero--------------------------------->
-        <div class="hero-a">
+        <div class="hero-a" role="banner">
             <div class="box" >
                 <div class="rectangle" ></div>
             </div>
@@ -66,9 +68,9 @@
         </div>
 
         <!-------------------MISSION & VALUES------------------->
-        <div class="miss-val">
+        <div class="miss-val" role="document">
             <div class="mission">
-                <div class="mission-t">
+                <div class="mission-t" role="document">
                     <h2>Our Mission</h2>
                     <p>Our mission here at Pawster is to provide protection, care, and a true second chance at life for the animals in our community. We are a no-kill facility and believe that all animals deserve a sense of safety, care, and a chance to find a loving home.
                     <br>
@@ -78,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="values">
+            <div class="values" role="document">
                 <h2>Our Values</h2>
 
                 <div class="values-cards">
@@ -104,54 +106,54 @@
             </div>
         </div>
 
-        <div class="story">
+        <div class="story" role="document">
             <div class="story-img">
-                <img src="images/about/pup-in-box-square.jpg" alt="Puppy in a box outside">
+                <img src="images/about/pup-in-box-square.jpg" alt="Puppy in a box outside" role="img">
             </div>
 
-            <div class="story-content">
+            <div class="story-content" role="form">
                 <h2>Our Story</h2>
                 <p>Our story begins with the simple belief that every animal deserves a safe place to go, a second chance at life, and someone who will not give up on them. We began as a group of animal lovers helping stray and abandoned pets in our community. We quickly expanded as we received requests for help from our neighbors. We also received offers of help from volunteers in our community and the city. We have worked tirelessly to build Pawster, not only as a shelter but as a promise to those animals that have nowhere else to turn. We have made the conscious choice to be a no-kill shelter because every life is precious and every animal deserves to have a loving home. We believe that safety, compassion, and patience guide everything we do. Our shelter is run entirely by volunteers. They help us stay connected to our community.</p>
             </div>
         </div>
 
         <div class="contact">
-            <div class="contact-form">
+            <div class="contact-form" role="form">
                 <form>
                     <div class="small-box">
                         <div class="input-box">
                             <label for="fname">First Name:</label>
-                            <input type="text" id="fname">
+                            <input type="text" id="fname" role="textbox">
                         </div>
 
                         <div class="input-box">
                             <label for="lname">Last Name:</label>
-                            <input type="text" id="lname">   
+                            <input type="text" id="lname" role="textbox">   
                         </div>
 
                         <div class="input-box">
                             <label for="email">Email:</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" role="textbox">
                         </div>
                         
                         <div class="input-box">
                             <label for="subject">Subject:</label>
-                            <input type="text" id="Subject">
+                            <input type="text" id="subject" role="textbox">
                         </div>
                     </div>
                     
                     <div class="msg-box">
                         <label for="message">Your Message:</label>
-                        <textarea id="message"></textarea>
+                        <textarea id="message" role="textbox"></textarea>
                     </div>
                     
                     <div class="btn-form">
-                        <button type="submit">SUBMIT</button>
+                        <button type="submit" role="buttton">SUBMIT</button>
                     </div>
                 </form>
             </div>
             
-            <div class="contact-info">
+            <div class="contact-info" role="article">
                 <h6>Adresse:</h6>
                 <p>123 Milkway Street, Ottawa
                 <br> ON, Canada, J9L 0Y9</p>
@@ -164,7 +166,7 @@
                 <br>
 
                 <h6>Socials</h6>
-                <ul>
+                <ul role="listitem">
                     <li><a href="https://www.facebook.com"><img src="images/about/social/face.png" alt="Facebook"></a></li>
                     <li><a href="https://www.instagram.com"><img src="images/about/social/insta.png" alt="Instagram"></a></li>
                     <li><a href="https://www.tiktok.com"><img src="images/about/social/tt.png" alt="TikTok"></a></li>
@@ -176,12 +178,12 @@
 
     <footer>
     <!--FOOTER-->
-    <div class="footer-about">
-            <img src="images/resized-logo.png" alt="Pawster Logo">
+    <div class="footer-about" role="menubar">
+            <img src="images/resized-logo.png" alt="Pawster Logo" role="img">
             <div class="footer-about-nav">
                 <p>&copy; 2026 Pawster. All rights reserved.</p>
 
-                <ul>
+                <ul role="list">
                     <li><a href="404.html">Privacy Policy</a></li>
                     <li><a href="404.html">Terms of Service</a></li>
                     <li><a href="404.html">Cookie Policy</a></li>

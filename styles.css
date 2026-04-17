@@ -1,7 +1,7 @@
 /*add bg color*/
 :root{
-  background-color: #965d43;
-  overflow-x: hidden; /*prevents horizontal scrolling*/
+    background-color: #965d43;
+    overflow-x: hidden; /*prevents horizontal scrolling*/
 }
 
 .get-involved{
@@ -10,6 +10,20 @@
     }
 }
 
+.skip {
+    position: fixed;
+    left: -500em;
+    top: 2rem;
+    overflow: hidden;
+   }/*hide the skip link from the commoners*/
+
+.skip:focus {
+    position: static;
+    border: cyan 3px solid;
+    text-decoration: none;
+    color: chartreuse;
+    background-color: #000;
+    }/*the skip link comes in once tab used and style also has been added for contrast*/
 /*--------------------------------------------------------------------------------
 ---------------------------------navigation bar---------------------------------
 --------------------------------------------------------------------------------*/
