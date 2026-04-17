@@ -5,6 +5,8 @@ Through out this websites i had so many issues with mobile responsiveness. I see
 However, figma being better then i expected give you the properties for your buttons or backgrounds and all all other design so you do have to guess sizing as much. It makes css go a little quicker until u have to add another div lol. I also finally realized that i am actually memorizing lots of code which i thought i could never do but trial and error help me understand better and remembers what does what. Flex and grid can get so confusing and at the start i was expecting to not really be able to do it and now i used it so much that after so many walls hit it finally went thru my skull.
 
 ALSO from now on i have a website checklist cause there is so much needed and i lose track and this happen here sadly.
+
+[I belive i am so use to desktop that trying to start mobile first is so hard for me and i understand why it works and but when it comes to implamenting i get a little confused]
 			
 
 FIGMA FILE LINKED TO THIS SITE: https://www.figma.com/design/YgHGS9r3g1DvIbuXTy8nr4/Web-Dev-Finale?node-id=3-6168&m=dev 
